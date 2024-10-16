@@ -1,0 +1,178 @@
+.sidebar {
+    width: 256px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    background-color: #00796b;
+    color: white;
+    padding: 16px;
+}
+
+.sidebar-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sidebar-header p {
+    font-size: 14px;
+    margin: 4px 0 0;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+    padding: 16px 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    color: #00796b;
+}
+
+.menu-item:hover {
+    background-color: #e0f2f1;
+}
+
+.menu-item.active {
+    background-color: #00796b;
+    color: white;
+}
+
+.menu-item-content {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-content svg {
+    margin-right: 8px;
+}
+
+.pdf-label {
+    font-size: 12px;
+    background-color: #e0e0e0;
+    color: #616161;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 256px;
+    background-color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #e0f2f1;
+}
+
+.sidebar-footer {
+    background-color: #e0f2f1;
+    padding: 16px;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-info p {
+    font-size: 14px;
+    margin: 4px 0 0;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.star-rating {
+    display: flex;
+    margin-right: 8px;
+}
+
+.star {
+    color: #bdbdbd;
+    cursor: pointer;
+}
+
+.star.filled {
+    color: gold;
+}
+
+.rating span {
+    font-size: 14px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    width: max-content;
+}
+
+.dropdown-item {
+    padding: 8px 16px;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background: #f0f0f0;
+}
